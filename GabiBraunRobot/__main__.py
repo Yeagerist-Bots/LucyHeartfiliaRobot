@@ -53,16 +53,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`𝙷𝚎𝚢 𝚃𝚑𝚎𝚛𝚎!` [👩‍💼](https://telegra.ph/file/cb7d19dc04371dd81b747.jpg) `My name is` *𝙻𝚞𝚌𝚢 𝙷𝚎𝚊𝚛𝚝𝚏𝚒𝚕𝚒𝚊*
-`𝙸 𝚊𝚖 𝚊𝚗 𝙰𝚗𝚒𝚖𝚎 𝚃𝚑𝚎𝚖𝚎𝚍 𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚋𝚘𝚝💙
-inspired from  gabi braun and managed by  (𝙻𝚒𝚝𝚎 𝚈𝚊𝚐𝚊𝚖𝚒) and (𝙸𝚝𝚜☆𝚙𝚛𝚘) for Your Telegram Group , I specialize in managing anime and similar themed groups.
-𝚈𝚘𝚞 𝚌𝚊𝚗 𝚏𝚒𝚗𝚍 𝚖𝚢 𝚕𝚒𝚜𝚝 𝚘𝚏 𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚠𝚒𝚝𝚑! 𝙷𝚒𝚝` *📚𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜*   
+*Hola! {}, myself {}!* 
+*An Anime themed group management bot from* [K-ON](https://k-on.fandom.com/wiki/K-ON!_(Anime))!!
+• *Uptime:* `{}`
+• `{}` *users, across* `{}` *chats.*
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="⭐🌟 A͙D͙D͙ M͙E͙ I͙N͙ Y͙O͙U͙R͙ G͙R͙O͙U͙P͙ 🌟⭐",url="t.me/Lucy_Heartfilia_Robot?startgroup=true"),
+            text="⭐🌟 A͙D͙D͙ M͙E͙ I͙N͙ Y͙O͙U͙R͙ G͙R͙O͙U͙P͙ 🌟⭐",url="t.me/MioAkiyamamange_bot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -70,40 +70,46 @@ buttons = [
      
     ],
     [     InlineKeyboardButton(
-            text="<(_ 💡_*)> ñð†åßlê Grðµþ.", url="https://telegram.dog/NotableDiscussion"),
+            text="<(_ 💡_*)> Doramon channel.", url="https://t.me/doraemonzone"),
     
     ],
     [
         InlineKeyboardButton(
-            text="📮 ☞ 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url="https://telegram.dog/lucyupdates"),
+            text="📮 ☞ 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url="https://t.me/MioAkiyamaupdate"),
     ],
     [
         InlineKeyboardButton(
-            text="📑 𝙻𝚘𝚐𝚜", url="https://t.me/Lucylogs"),
+            text="📑 𝙻𝚘𝚐𝚜", url="https://t.me/MioAkiyamamange_botlog"),
           
 
 
 InlineKeyboardButton(
-            text="(人◕‿◕) 𝕊𝕌ℙℙ𝕆ℝ𝕋 (•◡•)", url="https://telegram.dog/LucyHelpSupport"
+            text="(人◕‿◕) 𝕊𝕌ℙℙ𝕆ℝ𝕋 (•◡•)", url="https://t.me/Yeageristbots"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="🗄️ Source Code", url="https://github.com/pratyaksh731/LucyHeartfiliaRobot"
+                    text="🗄️ Anime chat", url="https://t.me/TheWeebs"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Lucy Heartfilia]("https://telegra.ph/file/8cab4bb122cf76702b06d.jpg") 
-I'm a Anime Bot and help admins manage their groups with Some Powerful Titans! `Have a look at the following for an idea of some of the things I can help you with.`"""
+*{} comes with:*
+*AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters*, *NSFW* *and more!*
+🎛 *All commands can either be used with* `/` *or* `!`.
+🎛 *Reach out for support:*@Yeageristbots [.](https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif)
+""".format(
+    dispatcher.bot.first_name, ""
+    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+
+KURISU_IMG = "https://telegra.ph/file/a840b1b76035646acdb3b.jpg"
+KURISUIMGSTART = "https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paytm](#) or by contacting @callme_pro\
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+There are two ways of supporting ME; [Donate There VPS](https://t.me/Yeageristbotsdev)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -348,16 +354,15 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Lucy*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Aio*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_shasa's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/pratyaksh731/LucyHeartfiliaRobot).
-                 \n\nIf you have any question about *Lucy*, let us know at .""",
+                 \n\n_shasa's licensed under the GNU General Public License v3.0
+                 \n\nIf you have any question about *Mio*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -383,8 +388,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👩‍💼 I'm *Lucy*
-                 \nHere is the [Source Code](https://github.com/pratyaksh731/LucyHeartfiliaRobot) .""",
+            text=""" Hi..👩‍💼 I'm *Mio*
+                 \nHere is the [My Master](https://t.me/Yeageristbotsdev) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
