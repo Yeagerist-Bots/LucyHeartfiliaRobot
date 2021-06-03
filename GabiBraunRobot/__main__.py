@@ -102,11 +102,6 @@ AI Chatbot, Anime, Music, Notes, Filters, NSFW and more!
 🎛 All commands can either be used with / or !.
 🎛 Reach out for support:@Yeageristbots . (https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif)
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-You can support the project via [Paytm](#) or by contacting @callme_pro\
-Supporting isnt always financial! \
-Those who cannot provide monetary support are welcome to help us develop the bot at ."""
-
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}0
