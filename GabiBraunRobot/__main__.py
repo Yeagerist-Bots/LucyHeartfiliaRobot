@@ -53,10 +53,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hola! {}, myself {}!* 
-*An Anime themed group management bot from* [K-ON](https://k-on.fandom.com/wiki/K-ON!_(Anime))!!
-• *Uptime:* `{}`
-• `{}` *users, across* `{}` *chats.*
+`𝙷𝚎𝚢 𝚃𝚑𝚎𝚛𝚎!` [👩‍💼](https://telegra.ph/file/a840b1b76035646acdb3b.jpg) `My name is` *Mio Akiyama*
+`𝙸 𝚊𝚖 𝚊𝚗 𝙰𝚗𝚒𝚖𝚎 𝚃𝚑𝚎𝚖𝚎𝚍 𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚋𝚘𝚝💙
+ I specialize in managing anime and similar themed groups.
+𝚈𝚘𝚞 𝚌𝚊𝚗 𝚏𝚒𝚗𝚍 𝚖𝚢 𝚕𝚒𝚜𝚝 𝚘𝚏 𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚠𝚒𝚝𝚑! 𝙷𝚒𝚝` *📚𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜*   
 """
 
 buttons = [
@@ -70,7 +70,7 @@ buttons = [
      
     ],
     [     InlineKeyboardButton(
-            text="<(_ 💡_*)> Doramon channel.", url="https://t.me/doraemonzone"),
+            text="<(_ 💡_*)> Weeb Grðµþ.", url="https://t.me/TheWeebs"),
     
     ],
     [
@@ -90,30 +90,26 @@ InlineKeyboardButton(
     ],
     [
         InlineKeyboardButton(
-                    text="🗄️ Anime chat", url="https://t.me/TheWeebs"
+                    text="🗄️ Anime Chat", url="https://t.me/anime_realms_chats"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-*{} comes with:*
-*AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters*, *NSFW* *and more!*
-🎛 *All commands can either be used with* `/` *or* `!`.
-🎛 *Reach out for support:*@Yeageristbots [.](https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif)
-""".format(
-    dispatcher.bot.first_name, ""
-    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
-
-KURISU_IMG = "https://telegra.ph/file/a840b1b76035646acdb3b.jpg"
-KURISUIMGSTART = "https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif"
+Mio Akiyama comes with:
+AI Chatbot, Anime, Music, Notes, Filters, NSFW and more!
+🎛 All commands can either be used with / or !.
+🎛 Reach out for support:@Yeageristbots . (https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif)
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-There are two ways of supporting ME; [Donate There VPS](https://t.me/Yeageristbotsdev)."""
+ You can support the project via [Paytm](#) or by contacting @callme_pro\
+ Supporting isnt always financial! \
+ Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
-HELPABLE = {}
+HELPABLE = {}0
 STATS = []
 USER_INFO = []
 DATA_IMPORT = []
@@ -354,15 +350,16 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Aio*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Lucy*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_shasa's licensed under the GNU General Public License v3.0
-                 \n\nIf you have any question about *Mio*, let us know at .""",
+                 \n\n_shasa's licensed under the GNU General Public License v3.0_
+                 \nHere is the [💾Repository](https://github.com/pratyaksh731/LucyHeartfiliaRobot).
+                 \n\nIf you have any question about *Lucy*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -377,7 +374,7 @@ def gabi_about_callback(update, context):
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.Plain,
                 timeout=60,
                 disable_web_page_preview=False,
         )
@@ -389,7 +386,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..👩‍💼 I'm *Mio*
-                 \nHere is the [My Master](https://t.me/Yeageristbotsdev) .""",
+                 \nHere is the [My master](https://t.me/Yeageristbotsdev) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -404,7 +401,7 @@ def Source_about_callback(update, context):
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.Plain,
                 timeout=60,
                 disable_web_page_preview=False,
         )
