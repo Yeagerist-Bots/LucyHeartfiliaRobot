@@ -97,14 +97,17 @@ InlineKeyboardButton(
 
 
 HELP_STRINGS = """
-Mio Akiyama comes with:
-AI Chatbot, Anime, Music, Notes, Filters, NSFW and more!
-🎛 All commands can either be used with / or !.
-🎛 Reach out for support:@Yeageristbots . (https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif)
+`Hey there! My name is` [Mio]("https://telegra.ph/file/ea5b00b9307c504be2ad4.mp4") 
+I'm a Anime Bot and help admins manage their groups with Some Powerful Titans! `Have a look at the following for an idea of some of the things I can help you with.`"""
+
+DONATE_STRING = """Heya, glad to hear you want to donate!
+ You can support the project via [vps](#) or by contacting@Yeageristbotofficial\
+ Supporting isnt always financial! \
+ Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
-HELPABLE = {}0
+HELPABLE = {}
 STATS = []
 USER_INFO = []
 DATA_IMPORT = []
@@ -345,7 +348,7 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Lucy*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Mio*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
@@ -369,7 +372,7 @@ def gabi_about_callback(update, context):
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.Plain,
+                parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
         )
@@ -381,7 +384,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..👩‍💼 I'm *Mio*
-                 \nHere is the [My master](https://t.me/Yeageristbotsdev) .""",
+                 \nHere is the [Source Code](https://github.com/pratyaksh731/LucyHeartfiliaRobot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -396,7 +399,7 @@ def Source_about_callback(update, context):
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.Plain,
+                parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
         )
