@@ -62,3 +62,8 @@ The original builder of this bot
 * [The Ghost Hunter](https://telegram.dog/The_Ghost_Hunter)
 
 All original credits go to <a href="https://telegram.dog/The_Ghost_Hunter">The Ghost Hunter</a>, Without his efforts, this fork would not have been possible
+
+## How to setup on Heroku 
+For starters click on this button 
+
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Yeagerist-Bots/LucyHeartfiliaRobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
