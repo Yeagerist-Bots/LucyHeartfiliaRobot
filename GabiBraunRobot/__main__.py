@@ -97,13 +97,19 @@ InlineKeyboardButton(
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Mio]("https://telegra.ph/file/ea5b00b9307c504be2ad4.mp4") 
-I'm a Anime Bot and help admins manage their groups with Some Powerful Titans! `Have a look at the following for an idea of some of the things I can help you with.`"""
+*{} comes with:*
+*AI Chatbot*, *Anime*, *Music*, *Notes*, *Filters*, *NSFW* *and more!*
+🎛 *All commands can either be used with* `/` *or* `!`.
+🎛 *Reach out for support:*@Yeageristbots [.](https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif)
+""".format(
+    dispatcher.bot.first_name, ""
+    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+
+KURISU_IMG = "https://telegra.ph/file/a840b1b76035646acdb3b.jpg"
+KURISUIMGSTART = "https://images5.fanpop.com/image/photos/29600000/Don-t-Say-Lazy-k-on-29601806-500-281.gif"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [vps](#) or by contacting@Yeageristbotofficial\
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+There are two ways of supporting ME; [Donate There VPS](https://t.me/Yeageristbotsdev)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
